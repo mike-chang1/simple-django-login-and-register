@@ -65,18 +65,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'app.wsgi.application'
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = os.path.join(CONTENT_DIR, 'tmp/emails')
-EMAIL_HOST_USER = 'test@example.com'
-DEFAULT_FROM_EMAIL = 'test@example.com'
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = os.path.join(CONTENT_DIR, 'tmp/emails')
+# EMAIL_HOST_USER = 'test@example.com'
+# DEFAULT_FROM_EMAIL = 'test@example.com'
 
-# EMAIL_HOST = 'smtp.mailgun.org'
-# EMAIL_HOST_USER = 'postmaster@sandbox096ab57c96c64d90b34ce77d45c8e590.mailgun.org'
-# DEFAULT_FROM_EMAIL = 'noreply@econa.net'
-# EMAIL_HOST_PASSWORD = 'd6fde046442d682d7b5351a5d26bf463'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST_USER = 'postmaster@sandbox096ab57c96c64d90b34ce77d45c8e590.mailgun.org'
+DEFAULT_FROM_EMAIL = 'noreply@econa.net'
+EMAIL_HOST_PASSWORD = 'd6fde046442d682d7b5351a5d26bf463'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 
 DATABASES = {
     'default': {
@@ -101,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 ENABLE_USER_ACTIVATION = True
-DISABLE_USERNAME = False
+DISABLE_USERNAME = True
 LOGIN_VIA_EMAIL = True
 LOGIN_VIA_EMAIL_OR_USERNAME = False
 LOGIN_REDIRECT_URL = 'index'
@@ -121,7 +121,7 @@ USE_I18N = True
 USE_L10N = True
 LANGUAGE_CODE = 'en'
 LANGUAGES = [
-    ('en', _('English')),
+    ('en', _('English1')),
     ('ru', _('Russian')),
     ('zh-Hans', _('Simplified Chinese')),
     ('fr', _('French')),

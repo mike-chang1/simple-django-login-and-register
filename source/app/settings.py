@@ -7,4 +7,4 @@ if IS_PRODUCTION:
 else:
     from .conf.development.settings import *
 
-ALLOWED_HOSTS = ['eb-django-app-dev.elasticbeanstalk.com','127.0.0.1']
+ALLOWED_HOSTS = ['e3-env.eba-5dwgj7av.us-west-2.elasticbeanstalk.com','127.0.0.1','34.214.242.169','my.econa.net']
