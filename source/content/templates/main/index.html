@@ -5,9 +5,16 @@
 {% block content %}
 
     {% if request.user.is_authenticated %}
+        <h6>{% trans 'Hi, ' %} <b>{{ request.user.first_name }}</b>.<br/> Before taking any assessment, please start here.</h6>
+        <a class="btn btn-outline-secondary" href="https://8moh5loah6p.typeform.com/to/BaXCtF8l" role="button">Initial Survey</a>
+    
+        
 
-        {% trans 'Your username is' %} <b>{{ request.user.username }}</b>.
-
+        <div class="mt-4 pt-4" >
+            <h6>Your available assessments</h6>
+           <a class="btn btn-outline-secondary" href="https://8moh5loah6p.typeform.com/to/L3nHnROv" role="button">ADHD</a>
+            <a class="btn btn-outline-secondary" href="https://8moh5loah6p.typeform.com/to/mFUR99Ky" role="button">Suicide Risk</a>
+         </div>
     {% else %}
 
         {% trans 'You are a guest.' %}
